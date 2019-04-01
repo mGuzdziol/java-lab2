@@ -25,7 +25,7 @@ public class Main {
             threadList.get(i).start();
         }
 
-        classes = loadClasses(new File("D:\\Studia\\Sem6\\java\\cw2\\algorithm"), "knapsackProblem");
+        classes = loadClasses(new File("D:\\Studia\\Sem6\\java\\cw2\\java-lab2\\algorithm"), "knapsackProblem");
 
         writeLoadedClasses();
 
@@ -62,7 +62,7 @@ public class Main {
 
         ClassLoader c = new URLClassLoader(urls);
 
-        File[] files = new File("D:\\Studia\\Sem6\\java\\cw2\\algorithm\\" + packageName).listFiles();
+        File[] files = new File("D:\\Studia\\Sem6\\java\\cw2\\java-lab2\\algorithm\\" + packageName).listFiles();
         for (File file : files) {
 
             if(!file.getName().contains("$"))
